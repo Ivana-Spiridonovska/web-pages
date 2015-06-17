@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vleznici</title> <script type="text/javascript">
+function proverka()
+{
+    var ime=document.getElementById('ime').value;
+    var prezime=document.getElementById('prezime').value;
+    var mail=document.getElementById('mail').value;
+    var natprevar=document.getElementById('natprevar').value;
+    var karti=document.getElementById('karti').value;
+    
+    if(ime=="" || prezime=="" || mail=="" || karti=="" )
+        {
+            alert("Треба да се внесат сите податоци!");
+        }
+	else	
+       {
+           window.alert("Благодарам " + ime + prezime + " што нарачавте! Вашите податоци се успешно пратени.\n\
+           Ќе бидете дополнително информирани за тоа каде и кога ќе можете да си земете влезниците");
+        }
+}    
+</script>    
+</head>
+
+<body>
+<table width="100%" cellspacing="2" cellpadding="0">
+  <tr>
+    <td bgcolor="#339999">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" cellspacing="0" cellpadding="15">
+      <tr>
+        <td width="16%" bgcolor="#FFFFFF"><img src="ehf_euro_2012_srb_Logo_200.jpg" width="150" height="150" alt="logo na ehf-euro" /></td>
+        <td width="84%" align="center" valign="middle" bgcolor="#339999"><APPLET codebase="classes2" code="apletvtor/ApletVtor.class" width=350 height=200></APPLET>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <th bgcolor="#339999">&nbsp;</th>
+  </tr>
+  <tr>
+    <td height="25"><table width="100%" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="16%" height="0" align="left" valign="top" bgcolor="#339999"><a href="pocetna.html"><img src="button(15).png" alt="pocetna" width="150" height="50" border="0" /></a><br />
+          <a href="natprevari.html"><img src="button(13).png" alt="natprevari" width="150" height="50" border="0" /></a><br />
+          <a href="istorija.html"><img src="button(18).png" alt="istorija" width="150" height="50" border="0" /></a><br />
+          <a href="galerija.html"><img src="button(14).png" alt="galerija" width="150" height="50" border="0" /></a><br />
+          <a href="vleznici.html"><img src="button(16).png" alt="vleznici" width="150" height="50" border="0" /></a><br />
+          <a href="kontakt.html"><img src="button(17).png" alt="kontakt" width="150" height="50" border="0" /></a><br /></td>
+        <td width="84%" height="0" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="38%"><table width="70%" height="171" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="56%" align="left" valign="top"><form action="MAILTO:ivana_spiridonovska@yahoo.com" method="post" enctype="text/plain">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                    <tr>
+                      <td width="29%">Име:</td>
+                      <td width="71%"><p>
+                        <input type="text" name="ime" id="ime"  />
+                        </p></td>
+                      </tr>
+                    <tr>
+                      
+                      <td height="25"><p>Презиме:<br />
+                        </p></td>
+                      <td><p>
+                        <input type="text" name="prezime" id="prezime" />
+                        </p></td>
+                      </tr>
+                    
+                    <tr>
+                      <td>E-mail:</td>
+                      <td><p>
+                        <input type="text" name="mail" id="mail" />
+                        </p></td>
+                      </tr> 
+                    <tr>
+                      
+                      <tr>
+                        <td>Избери натпревар:</td>
+                        <td> <p>
+                          <select name="natprevar" id="natprevar">
+                            <option value="1">15.01.2012 => 18:15 =>  Полска-Србија</option>
+                            <option value="2">15.01.2012 => 20:15 => Данска-Словачка</option>
+                            <option value="3">15.01.2012 => 17:20 => Германија-Чешка</option>
+                            <option value="4">15.01.2012 => 19:30 => Шведска-Македонија</option>
+                            
+                            <option value="5">16.01.2012 => 18:15 => Франција-Шпанија</option>
+                            <option value="6">16.01.2012 => 20:15 => Унгарија-Русија</option>
+                            <option value="7">16.01.2012 => 18:10 => Норвешка-Словенија</option>
+                            <option value="8">16.01.2012 => 20:10 => Хрватска-Исланд</option>
+                            
+                            <option value="9">17.01.2012 => 18:15 => Словачка- Полска</option>
+                            <option value="10">17.01.2012 => 20:15 => Србија-Данска</option>
+                            <option value="11">17.01.2012 => 18:15 => Македонија-Германија</option>
+                            <option value="12">17.01.2012 => 20:15 => Чешка-Шведска</option>
+                            
+                            <option value="13">18.01.2012 => 18:15 => Русија-Франција</option>
+                            <option value="14">18.01.2012 => 20:15 => Шпанија-Унгарија</option>
+                            <option value="15">18.01.2012 => 18:10 => Словенија-Хрватска</option>
+                            <option value="16">18.01.2012 => 20:10 => Исланд-Норвешка</option>
+                            
+                            <option value="17">19.01.2012 => 18:15 => Германија-Шведска</option>
+                            <option value="18">19.01.2012 => 20:15 => Македонија-Чешка</option>
+                            <option value="19">19.01.2012 => 18:15 => Полска-Данска</option>
+                            <option value="20">19.01.2012 => 20:15 => Словачка-Србија</option>
+                            
+                            <option value="21">20.01.2012 => 18:15 => Шпанија-Русија</option>
+                            <option value="22">20.01.2012 => 20:15 => Франција-Унгарија</option>
+                            <option value="23">20.01.2012 => 18:10 => Исланд-Словенија</option>
+                            <option value="24">20.01.2012 => 20:10 => Хрватска-Норвешка</option>
+                            </select>
+                          </p></td>
+                        </tr>
+                    
+                    <tr>
+                      <td>Избери страна: </td>
+                      <td><input type="radio" name="strana" value="istok"/> Исток - 3000 ден.   
+                        <br />
+                        <input type="radio" name="strana" value="zapad"/> 
+                        Запад - 1500 ден. 
+                        <br />
+                        <input type="radio" name="strana" value="sever"/> 
+                        Север - 2000 ден. 
+                        <br />
+                        <input type="radio" name="strana" value="jug"/> 
+                        Југ - 2000 ден.</td>
+                      </tr>
+                    
+                    <tr>
+                      <td>Број на влезници: </td>
+                      <td><p>
+                        <input type="text" id="karti" name="karti"/>
+                        </p></td>
+                      </tr>
+                    <tr>
+                      
+                      <td>&nbsp;</td>
+                      <td><input type="button" onclick="proverka()" value="Прати"/> </td>
+                      </tr>
+                    </table>
+                  </form></td>
+                </tr>
+              <td width="44%">&nbsp;</td>
+                </tr>
+              </table></td>
+            </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="19" bgcolor="#339999">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

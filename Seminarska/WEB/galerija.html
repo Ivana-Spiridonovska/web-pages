@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Galerija</title>
+</head>
+
+<body>
+<table width="100%" cellspacing="2" cellpadding="0">
+  <tr>
+    <td bgcolor="#339999">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" cellspacing="0" cellpadding="15">
+      <tr>
+        <td width="16%" bgcolor="#FFFFFF"><img src="ehf_euro_2012_srb_Logo_200.jpg" width="142" height="139" alt="logo na ehf-euro" /></td>
+        <td width="84%" align="right" valign="middle" bgcolor="#339999"><h2><strong><em>Галерија</em></strong></h2></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <th bgcolor="#339999">&nbsp;</th>
+  </tr>
+  <tr>
+    <td height="25"><table width="100%" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="10%" height="0" align="left" valign="top" bgcolor="#339999"><a href="pocetna.html"><img src="button(15).png" alt="pocetna" width="150" height="50" border="0" /></a><br />
+          <a href="natprevari.html"><img src="button(13).png" alt="natprevari" width="150" height="50" border="0" /></a><br />
+          <a href="istorija.html"><img src="button(18).png" alt="istorija" width="150" height="50" border="0" /></a><br />
+          <a href="galerija.html"><img src="button(14).png" alt="galerija" width="150" height="50" border="0" /></a><br />
+          <a href="vleznici.html"><img src="button(16).png" alt="vleznici" width="150" height="50" border="0" /></a><br />
+          <a href="kontakt.html"><img src="button(17).png" alt="kontakt" width="150" height="50" border="0" /></a><br /></td>
+        <td width="85%" height="0" align="center" valign="top"><table border="0" cellpadding="0">
+  <caption><strong>Тимови</strong></caption>
+  <tr>
+    <td width="100%"><img src="MKD-team.png" width="650" height="350" name="slikicki"></td>
+  </tr>
+  <tr>
+    <td width="100%"><form method="POST" name="rotacija">
+      <div align="center"><center><p>
+
+<script language="JavaScript1.1">
+
+/*
+Photo Slider II- By Kevin Adams (kadams@kyk.net)
+For this script and more
+Visit http://www.javascriptkit.com
+*/
+
+var sliki=new Array()
+var tekst=new Array()
+var koi=0
+var sto=0
+
+//Change the below variables to reference your own images. You may have as many images in the slider as you wish
+sliki[0]="MKD-team.png"
+sliki[1]="SRB_Team.png"
+sliki[2]="cro_team.png"
+sliki[3]="SLO_Team.png" 
+sliki[4]="Slovakian_Team.png" 
+sliki[5]="ESP-Team.png"
+sliki[6]="France_team.png"
+sliki[7]="GER_Team.png"
+sliki[8]="HUN-Team.png" 
+sliki[9]="CZE_team.png"
+sliki[10]="denmark_team.png"
+sliki[11]="ISL-Team.png" 
+sliki[12]="NOR-team.png"
+sliki[13]="POL_Team.png"
+sliki[14]="RUS-Team.png"
+sliki[15]="Team_SWE.png"
+
+
+//change coresponding description
+tekst[0]="Тимот на Македонија"
+tekst[1]="Тимот на Србија"
+tekst[2]="Тимот на Хрватска"
+tekst[3]="Тимот на Словенија"
+tekst[4]="Тимот на Словачка"
+tekst[5]="Тимот на Шпанија"
+tekst[6]="Тимот на Франција"
+tekst[7]="Тимот на Германија"
+tekst[8]="Тимот на Унгарија"
+tekst[9]="Тимот на Чешка"
+tekst[10]="Тимот на Данска"
+tekst[11]="Тимот на Исланд"
+tekst[12]="Тимот на Норвешка"
+tekst[13]="Тимот на Полска"
+tekst[14]="Тимот на Русија"
+tekst[15]="Тимот на Шведска"
+
+
+window.onload=new Function("document.rotacija.opis.value=tekst[0]")
+
+function nazad(){
+if (koi>0){
+window.status=''
+koi--
+document.images.slikicki.src=sliki[koi];
+sto--
+document.rotacija.opis.value=tekst[sto];
+}
+}
+
+function napred(){
+if (koi<sliki.length-1){
+koi++
+document.images.slikicki.src=sliki[koi]
+sto++
+document.rotacija.opis.value=tekst[sto];
+}
+else window.status='kraj na galerijata'
+}
+
+function type()
+	{
+	alert("Ovoj textbox samo pokazuva default komentari")
+	}
+
+
+</script>
+<p><input type=tekst name="opis" style="width:400px" size=50>
+
+<p><input type="button" value="<<Претходен" name="B2"
+      onClick="nazad()"> <input type="button" value="Следен>>" name="B1"
+      onClick="napred()"><br />
+      <a href="#" onClick="koi=1;sto=1;nazad();return false">Почни од почеток</a></p>
+      </center></div>
+    </form>
+    </td>
+  </tr>
+</table>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="19" bgcolor="#339999">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

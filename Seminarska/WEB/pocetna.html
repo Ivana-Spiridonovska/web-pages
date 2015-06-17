@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pocetna</title>
+<script type="text/javascript">
+function zemiKolace(ime)
+{
+var i,x,y,kolacinja=document.cookie.split(";");
+for (i=0;i<kolacinja.length;i++)
+  {
+  x=kolacinja[i].substr(0,kolacinja[i].indexOf("="));
+  y=kolacinja[i].substr(kolacinja[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==ime)
+    {
+    return unescape(y);
+    }
+  }
+}
+
+function postaviKolace(ime,vrednost1,denPrestanokNaVazenje)
+{
+var datumPrestanokNaVazenje=new Date();
+datumPrestanokNaVazenje.setDate(datumPrestanokNaVazenje.getDate() + denPrestanokNaVazenje);
+var vrednost=escape(vrednost1) + ((denPrestanokNaVazenje==null) ? "" : "; istekuvanje="+datumPrestanokNaVazenje.toUTCString());
+document.cookie=ime + "=" + vrednost;
+}
+
+function proveriKolace()
+{
+var korisnickoIme=zemiKolace("korisnickoIme");
+if (korisnickoIme!=null && korisnickoIme!="")
+  {
+  alert(korisnickoIme + " Ви благодарам што повторно ја посетивте мојата страна");
+  }
+else 
+  {
+  korisnickoIme=prompt("Внесете го вашето име","");
+  if (korisnickoIme!=null && korisnickoIme!="")
+    {
+    postaviKolace("korisnickoIme",korisnickoIme,365);
+    }
+  }
+}
+</script>
+</head>
+
+<body onload="proveriKolace()">
+<table width="100%" cellspacing="2" cellpadding="0">
+  <tr>
+    <td bgcolor="#339999">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" cellspacing="0" cellpadding="15">
+      <tr>
+        <td width="16%" bgcolor="#FFFFFF"><img src="ehf_euro_2012_srb_Logo_200.jpg" width="150" height="150" alt="logo na ehf-euro" /></td>
+        <td width="84%" align="center" valign="top" bgcolor="#339999"><APPLET codebase="classes" code="ApletNitka.class" width=350 height=200></APPLET>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <th bgcolor="#339999">&nbsp;</th>
+  </tr>
+  <tr>
+    <td height="25"><table width="100%" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="10%" height="0" align="left" valign="top" bgcolor="#339999"><a href="pocetna.html"><img src="button(15).png" alt="pocetna" width="150" height="50" border="0" /></a><br />
+          <a href="natprevari.html"><img src="button(13).png" alt="natprevari" width="150" height="50" border="0" /></a><br />
+          <a href="istorija.html"><img src="button(18).png" alt="istorija" width="150" height="50" border="0" /></a><br />
+          <a href="galerija.html"><img src="button(14).png" alt="galerija" width="150" height="50" border="0" /></a><br />
+          <a href="vleznici.html"><img src="button(16).png" alt="vleznici" width="150" height="50" border="0" /></a><br />
+          <a href="kontakt.html"><img src="button(17).png" alt="kontakt" width="150" height="50" border="0" /></a><br /></td>
+        <td width="85%" height="0" align="left" valign="top"><table width="100%" height="301" border="0" cellpadding="5" cellspacing="0">
+          <tr>
+            <td width="55%" align="center" valign="top"><img src="karta.jpg" width="470" height="439" alt="karta" /></td>
+            <td width="45%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+              <tr>
+                <td align="center"><h2>Европско првенство во ракомет</h2></td>
+              </tr>
+              <tr>
+                <td><p>Европското првенство во ракомет е официјален натпревар за ракометарски национални тимови од Европа и се одржува на секои две години. Овој натпревар исто така служи и како квалификационен натпревар за светското првенство.</p>
+                  <p>Оваа година европското првенство  ќе се одржи во Србија и тоа во четири градови:</p>
+                  <ul type="disc">
+                    <li>Белград</li>
+                    <li>Ниш</li>
+                    <li>Нови Сад</li>
+                    <li>Вршац</li>
+                  </ul>
+&nbsp;</p></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="19" bgcolor="#339999">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
